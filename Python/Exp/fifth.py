@@ -3,7 +3,7 @@ import matplotlib.pyplot as pIt
 
 print('----------------- COMBINED DATA TYPE PLAYING ----------------')
 
-# Strings of numbers
+# ----------------------- Strings of numbers ----------------------
 string1 = '56'
 string2 = '1248163264128'
 string3 = '12''13'
@@ -22,13 +22,13 @@ for i in (5*['string'])+[1,2,3,4,5]:
     print(i)
 '''
 
-# Lists of a certain number of strings
+# -------------------------- Lists of a certain number of strings -------------------------
 stringlist1 = ['hello','everybody']
 stringlist2 = ['super','kala','fragi','listic','expi','ala','docious']
 
 print(stringlist1,stringlist2,stringlist1+stringlist2)
 
-# Lists of strings and numbers
+# --------------------------- Lists of strings and numbers ----------------------------------
 liststrnum1 = ['Hello',100,'people',200,'of you are cool']
 liststrnum2 = ['Always',30,000,'people']
 liststrnum3 = ['100','100,000','people''is','what','you want']
@@ -39,17 +39,25 @@ for i in range(len(liststrnum1)):
     if not (isinstance(liststrnum1[i],str)):
         print('These are numbers:',liststrnum1[i])
 
-# List of tuples
+# --------------------------- List of tuples -------------------------------------------
 listtuple1 = [(1,2),(3,4)]
 listtuple2 = [(1,2,3),(4,5,6)]
 listtuple3 = [((10,11,12),(13,14,15))]
 listtuplepoints1 = [(0,0),(1,1),(2,2),(3,3),(4,4),(5,5)]
 
+# Fill a list of tuples with random numbers between one and ten. 
 listtuplepoints2 = []
 for i in range(4):
     listtuplepoints2.append( (random.randint(1,10) , random.randint(1,10) ) )
 
-print(listtuple1,listtuple2,listtuple3,listtuplepoints1,listtuplepoints1[0],listtuplepoints1[1],listtuplepoints2)
+
+print(listtuple1,
+      listtuple2,
+      listtuple3,
+      listtuplepoints1,
+      listtuplepoints1[0],
+      listtuplepoints1[1],
+      listtuplepoints2)
 
 
 # Plot random numbers using a package
@@ -58,25 +66,64 @@ print(listtuple1,listtuple2,listtuple3,listtuplepoints1,listtuplepoints1[0],list
 #pIt.show()
 
 
-# Sets of strings and numbers
+# ---------------------------- Sets of strings and numbers -------------------------------
 set1 = set('hi1yo2')
 set2 = set('a1b2c3d4e5')
 set3 = set('123475938994030583490857439850875407825435070975243095')
 
 
-print(set1, set2, set1 - set2, set1 | set2, set1 - set1, set2 & set2, set1 ^ set2)
+print(set1, '\n',
+      set2, '\n',
+      set1 - set2, '\n',
+      set1 | set2, '\n',
+      set1 - set1, '\n',
+      set2 & set2, '\n',
+      set1 ^ set2)
 
-# Tuples of strings
+# ----------------------------  Tuples of strings ---------------------------------------
+tuplestring1 = ('h','e','l','l','o')
+tuplestring2 = ('hey','sup','how are you','?')
+
+print(tuplestring1, tuplestring2)
+
+
+# ---------------------------- Dictionaries --------------------------------------------
+
+'''
+
+Two things make it up, both being ncecessary.  When two, 
+many combinations are possible? 
+First no: list, sets, dicts, 
+First yes: tuples, numbers, strings, boolean,  
+Second no: sets, 
+Second yes: numbers, boolean, dicts, strings, tuples, list
+
+
+'''
 
 
 
-# Dictionaries of lists
+dict1 = {2 : {3 : 3}}
+dict2 = {True : 0, }
+dict3 = {True : 0, False : 10}
+dict4 = {True : 0, 0 : True}
+dict5 = {1 : 2}
+dict7 = {(1,2) : 3, (2,1) : 5}
+dict8 = {2 : [2,3]}
+dict9 = {(2,4) : (7,9)}
+dict10 = {(4,3) : (10,'e')}
 
 
-# Dictionaries of lists of numbers and strings
+
+#dict6 = {{3 : 3} : 4}
+#dict5 = {set(1) : 1}
+#dict3 = {:}
+#dict2 = {[1,2] : 'point1', [3,4] : 'point2', [4,5] : 'point3'}
+#dict9 = {1 : set(3,4), 2 : set(1,2)}
 
 
-# Dictionaries of tuples
+dict11 = 
+
 
 
 
