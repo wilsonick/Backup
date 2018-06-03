@@ -59,7 +59,7 @@ if list1 != list1*2:
     print('help')
 
 
-
+# Many control flow statements together
 
 if True:
     if True:
@@ -72,7 +72,7 @@ if True:
 print('5')
 
 
-
+print('---------------------ANOTHER EXAMPLE--------------------------')
     
 if True:
     while False:
