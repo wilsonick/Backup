@@ -44,7 +44,7 @@ police = Peter()
 
 print(police)
 
-# Class with everything classes can have
+# Class with everything classes can have and some basic OO
 
 class Classroom:
     obediencelevel = 5
