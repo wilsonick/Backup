@@ -6,11 +6,29 @@ p2accept = [40,80]
 p2deny = [60,60]
 p2scores = 0
 
-roundnumber = 5
+roundnumber = 6
 currentround = 1
 
-p1strats = ['accept','accept','accept','deny']
-p2strats = ['deny','accept','accept','accept']
+p1strats = ['accept','deny','accept','deny','accept']
+p2strats = ['accept','accept','accept','deny','accept']
+
+
+# print(p2strats)
+
+
+# Play Player 2 as the opposite of Player 1
+
+for i in range(len(p2strats)): 
+    if p1strats[i] == 'accept':
+        # Do a different p2 strat for 'accept'
+        p2strats[i] = 'deny'
+    else:
+        # Do a different p2 strat for 'deny'
+        p2strats[i] = 'accept'
+
+
+# print(p2strats)
+
 
 
 while currentround != roundnumber:
