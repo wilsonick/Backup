@@ -26,4 +26,44 @@ print( bool(3328904032) )
 
 print( bytearray (9) )
 
-print( 
+nthe = 2
+
+print( callable( nthe ) ) 
+
+def calls(yo):
+    return yo
+
+print( callable( calls ) )
+
+# print( callable( yo ) )
+
+print( chr( 8364 ) )
+
+print( chr( 1114111 ) )
+
+# compile(a = 1)
+
+print ( complex(1,1) )
+
+# test1 = dict(44)
+# print(test1)
+
+print( dir() )
+
+print( dir('__builtins__'))
+
+print( divmod(10,20) )
+
+coders = ['Mark','Guido','Rasmus']
+
+print( list( enumerate( coders, 10 ) ) )
+
+mn = 19
+
+print( eval('56 * (mn + 8) * 2') )
+
+mn2 = eval('mn*23')
+
+print(mn2)
+
+

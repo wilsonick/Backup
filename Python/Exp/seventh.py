@@ -125,10 +125,18 @@ def ceilinglol(number):
 
 print(ceilinglol(3.4))
 
-'''
 def ceilingreal(number):
-    if (number - (number - 1) == )
-'''
+    #if (number - (number - 1) == )
+    res = int(number)
+    return res if res == number or number < 0 else res+1
+
+print(ceilingreal(4))
+
+print(ceilingreal(4.4))
+
+print(ceilingreal(5.4))
+
+print(ceilingreal(4432.442343244234))
 
 # Apparently, kind reader, the algorithm is not implementable in the standard language! It needs C to do (I think). 
 
